@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Solicitudes</title><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/solicitudes.css"></head>
+<body>
+<header class="topbar"><div><strong>Tank Management</strong><span id="userName"></span></div><button class="secondary" onclick="location.href='admin.html'">Volver al panel</button></header>
+<main class="container">
+<section class="page-heading"><div><h1>Solicitudes de Servicio</h1><p>Solicitudes pendientes de atención.</p></div><button id="refreshButton">Actualizar</button></section>
+<div id="requestsGrid" class="requests-grid"></div><div id="requestError" class="alert error hidden"></div>
+</main>
+<div id="requestModal" class="modal hidden"><div class="modal-card request-detail-card"><button id="closeRequest" class="modal-close">×</button><h2>Detalle de solicitud</h2><div id="requestDetail"></div></div></div>
+<script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/solicitudes.js"></script>
+</body></html>

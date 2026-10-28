@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Alta de Usuario</title><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/alta-usuario.css"></head>
+<body>
+<header class="topbar"><div><strong>Tank Management</strong><span id="userName"></span></div><button class="secondary" onclick="location.href='solicitudes.html'">Volver</button></header>
+<main class="container">
+<section class="page-heading"><div><h1>Alta de Usuario</h1><p>Datos de la solicitud y acceso del nuevo dueño.</p></div></section>
+<section class="panel">
+<div id="requestFields" class="readonly-grid"></div>
+<form id="altaForm" class="alta-form">
+  <h2>Datos de acceso</h2>
+  <div class="form-grid"><label>Usuario<input id="usuario" required maxlength="50"></label><label>Contraseña<input id="contrasena" type="password" required minlength="4" maxlength="255"></label></div>
+  <h2>Asignar Tanque por ID</h2>
+  <label>ID del Tanque<input id="tanqueId" type="number" min="1" required></label>
+  <div id="altaMessage" class="alert hidden"></div>
+  <div class="form-actions"><button type="button" class="secondary" onclick="location.href='solicitudes.html'">Cancelar</button><button id="altaButton" type="submit">Dar Alta</button></div>
+</form>
+</section>
+</main>
+<script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/alta-usuario.js"></script>
+</body></html>

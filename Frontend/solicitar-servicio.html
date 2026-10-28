@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solicitar Servicio</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/service.css">
+</head>
+<body class="login-page">
+<main class="form-card">
+  <div class="brand"><span>TM</span><div><h1>Solicitar Servicio</h1><p>Completá tus datos para solicitar el alta del servicio.</p></div></div>
+  <form id="serviceForm" class="service-form">
+    <div class="form-grid">
+      <label>Nombre<input id="nombre" required maxlength="100"></label>
+      <label>Apellido<input id="apellido" required maxlength="100"></label>
+      <label>DNI<input id="dni" required maxlength="30"></label>
+      <label>Dirección<input id="direccion" required maxlength="255"></label>
+      <label>Fecha<input id="fecha" type="date" required disabled></label>
+      <label>Hora<input id="hora" type="time" required disabled></label>
+    </div>
+    <div id="serviceMessage" class="alert hidden"></div>
+    <div class="form-actions">
+      <button type="button" class="secondary" onclick="location.href='login.html'">Volver</button>
+      <button id="sendButton" type="submit">Enviar Solicitud</button>
+    </div>
+  </form>
+</main>
+<script src="js/api.js"></script>
+<script src="js/solicitar-servicio.js"></script>
+</body>
+</html>

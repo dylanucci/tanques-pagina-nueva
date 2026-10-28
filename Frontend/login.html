@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Administración de tanques - Login</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-page">
+<main class="login-card">
+  <div class="brand"><span>TM</span><div><h1>Administración de tanques</h1><p>Control de tanques</p></div></div>
+  <form id="loginForm">
+    <label>Usuario<input id="usuario" required autocomplete="username"></label>
+    <label>Contraseña<input id="contrasena" type="password" required autocomplete="current-password"></label>
+    <button id="loginButton" type="submit">Ingresar</button>
+    <button id="serviceButton" type="button" class="secondary service-button">Solicitar Servicio</button>
+    <div id="loginError" class="alert error hidden"></div>
+  </form>
+</main>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

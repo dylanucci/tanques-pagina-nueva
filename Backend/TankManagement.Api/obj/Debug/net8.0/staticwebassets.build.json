@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Ser/HqImbhsoOX23RORA8ush2QBKoSo82xqdIs9Uwm8=",
+  "Source": "TankManagement.Api",
+  "BasePath": "_content/TankManagement.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
